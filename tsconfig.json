@@ -14,6 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  // we need to include our jest.setup.ts in the include array to take it in ts configuration
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "test/index.test.tsx", "jest.setup.ts"],
   "exclude": ["node_modules"]
 }
